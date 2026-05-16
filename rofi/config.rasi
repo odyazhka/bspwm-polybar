@@ -1,9 +1,0 @@
-configuration {
-    modi: "window,run,drun";
-    show-icons: false;
-    font: "PixelLocale v.1.4 12";
-    display-drun: "Поиск: ";
-    me-select-entry: "";
-    me-accept-entry: "MousePrimary";
-}
-@theme "~/.config/rofi/theme.rasi"
