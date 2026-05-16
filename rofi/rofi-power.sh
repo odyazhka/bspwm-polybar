@@ -1,21 +1,32 @@
-#!/bin/bash
+#!/bin/sh
 
-# Опции меню
-shutdown="󰐥    Выключение"
-reboot="󰑓    Перезагрузка"
-suspend="󰤄    Спящий режим"
-hibernate="H    Гиберанция"
-exit="󰍃    Выход"
-bl="    Блокировка"
+# Опции меню (теперь здесь обычные пробелы, разделитель добавим при выводе)
+shutdown="󰐥 Выключение"
+reboot="󰑓 Перезагрузка"
+suspend="󰤄 Спящий режим"
+hibernate="H Гибернация"
+exit="󰍃 Выход"
+bl=" Блокировка"
+
+# Формируем список, где между иконкой (первое слово) и текстом (остальное) встанет реальный ТАБ
+menu_rows=$(cat <<EOF
+󰐥	Выключение
+󰑓	Перезагрузка
+󰤄	Спящий режим
+H	Гибернация
+󰍃	Выход
+	Блокировка
+EOF
+)
 
 # Вызов Rofi
-chosen=$(printf "%s\n%s\n%s\n%s\n%s\n%s" "$shutdown" "$reboot" "$suspend" "$hibernate" "$exit" "$bl" | rofi -dmenu -i -p "Завершение работы")
+chosen=$(echo "$menu_rows" | rofi -dmenu -i -p "Завершение работы")
 
 case "$chosen" in
-    "$shutdown") sudo poweroff ;;
-    "$reboot") sudo reboot ;;
-    "$suspend") sudo zzz ;;
-    "$hibernate") sudo ZZZ ;;
-    "$exit") pkill -u $USER ;;
-    "$bl") ~/lock.sh ;;
+    *"Выключение"*) sudo poweroff ;;
+    *"Перезагрузка"*) sudo reboot ;;
+    *"Спящий режим"*) sudo zzz ;;
+    *"Гибернация"*) sudo ZZZ ;;
+    *"Выход"*) pkill -u $USER ;;
+    *"Блокировка"*) ~/lock.sh ;;
 esac
