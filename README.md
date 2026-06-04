@@ -11,7 +11,7 @@
 ### 1. Установить пакеты:
 
 ```
-sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi dbus yad xlockmore maim xdotool xclip jq pulseaudio pavucontrol
+sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi feh dbus yad xlockmore maim xdotool xclip jq pulseaudio pavucontrol feh
 ```
 
 ### 2. Переместить дотфайлы из репозитория к себе в .config
@@ -46,3 +46,9 @@ Cкачать и применить устаногвочный скрипт http
 (вместо iwa ваше имя пользователя)
 
 Сохраняем и выходим: контрл+o, контрл+x
+
+### 7. Поставить обои:
+
+```
+feh --bg-scale ~/oboi.png
+```
