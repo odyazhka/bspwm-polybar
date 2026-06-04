@@ -6,6 +6,15 @@
 
 Слева пришотофоплен вывод fastfetch в xterm, шрифт Terminus 28. Прикляпляю .Xresources для терминала
 
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/197771a7-3167-4386-b32e-214954d04dc0" />
+
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/6ee94ff6-e473-4346-a3b3-08a4717dad8a" />
+
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/2b94fcee-1cdf-47b6-a1b0-781fa47269b1" />
+
+
+
+
 ## Установка
 
 ### 1. Установить пакеты:
