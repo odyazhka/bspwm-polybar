@@ -28,10 +28,10 @@ sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi feh
 ### 3. Сделать исполняемыми файлы
 
 ```
-chmod -R 777 ~/.config/bspwm
-chmod -R 777 ~/.config/polybar
-chmod -R 777 ~/.config/rofi
-chmod -R 777 ~/.config/sxhkd
+chmod -R 755 ~/.config/bspwm
+chmod -R 755 ~/.config/polybar
+chmod -R 755 ~/.config/rofi
+chmod -R 755 ~/.config/sxhkd
 ```
 
 ### 4. Установить приложение для смены яркости на встроенных мониторах (если надо):
