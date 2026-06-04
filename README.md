@@ -14,14 +14,14 @@
 sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi dbus yad xlockmore maim xdotool xclip jq pulseaudio pavucontrol
 ```
 
-### 2. Переместить дотфайлы из .config к себе в .config
+### 2. Переместить дотфайлы из репозитория к себе в .config
 
 ### 3. Сделать исполняемыми файлы
 
 ```
-chmod -R 777 ~/.config/bspwm"
-chmod -R 777 ~/.config/polybar"
-chmod -R 777 ~/.config/rofi"
+chmod -R 777 ~/.config/bspwm
+chmod -R 777 ~/.config/polybar
+chmod -R 777 ~/.config/rofi
 chmod -R 777 ~/.config/sxhkd
 ```
 
@@ -30,8 +30,6 @@ chmod -R 777 ~/.config/sxhkd
 Cкачать и применить устаногвочный скрипт https://github.com/odyazhka/bg
 
 В visudo прописать /usr/local/bin/brightness для смены яркости без пароля
-
-
 
 ### 5. Для смены рскладки должен существовать файл 00-keyboard.conf в /etc/X11/xorg.conf.d
 
@@ -45,5 +43,6 @@ Cкачать и применить устаногвочный скрипт http
 
 Он должен выглядеть примерно вот так:
 <img width="653" height="126" alt="изображение" src="https://github.com/user-attachments/assets/54e24de2-e1cf-41bf-884c-f3de2bfa47d4" />
+(вместо iwa ваше имя пользователя)
 
-контрл+o, контрл+x
+Сохраняем и выходим: контрл+o, контрл+x
