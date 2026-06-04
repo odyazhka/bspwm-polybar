@@ -11,7 +11,7 @@
 ### 1. Установить пакеты:
 
 ```
-sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi feh dbus yad xlockmore maim xdotool xclip jq pulseaudio pavucontrol feh
+sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi feh dbus yad xlockmore maim xdotool xclip jq pulseaudio pavucontrol feh numlockx
 ```
 
 ### 2. Переместить дотфайлы из репозитория к себе в .config
@@ -27,7 +27,7 @@ chmod -R 777 ~/.config/sxhkd
 
 ### 4. Установить приложение для смены яркости на встроенных мониторах (если надо):
 
-Cкачать и применить устаногвочный скрипт https://github.com/odyazhka/bg
+Cкачать и запустить устаногвочный скрипт отсюда: https://github.com/odyazhka/bg
 
 В visudo прописать /usr/local/bin/brightness для смены яркости без пароля
 
