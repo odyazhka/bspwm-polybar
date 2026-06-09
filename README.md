@@ -1,5 +1,6 @@
-# dotfiles
-## Скриншоты
+# дотфайлы со скриптами для sbpwm, polybar и ro
+### Скриншоты
+
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/559257f9-747f-44c4-9cbf-483a8b783449" />
 
 
@@ -13,20 +14,21 @@
 
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/2b94fcee-1cdf-47b6-a1b0-781fa47269b1" />
 
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/f962014c-b44a-4fe6-bf4b-70235da47c70" />
 
 
 
-## Установка
+### Установка
 
-### 1. Установить пакеты:
+#### 1. Установить пакеты:
 
 ```
-sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi feh dbus yad xlockmore maim xdotool xclip jq pulseaudio pavucontrol feh numlockx
+sudo xbps-install -S terminus-font nerd-fonts-symbols-ttf bspwm polybar rofi feh dbus xlockmore maim xdotool xclip jq pulseaudio pavucontrol feh numlockx
 ```
 
-### 2. Переместить дотфайлы из репозитория к себе в .config
+#### 2. Переместить дотфайлы из репозитория к себе в .config
 
-### 3. Сделать исполняемыми файлы
+#### 3. Сделать исполняемыми файлы
 
 ```
 chmod -R 755 ~/.config/bspwm
@@ -35,19 +37,19 @@ chmod -R 755 ~/.config/rofi
 chmod -R 755 ~/.config/sxhkd
 ```
 
-### 4. Установить приложение для смены яркости на встроенных мониторах (если надо):
+#### 4. Установить приложение для смены яркости на встроенных мониторах (если надо):
 
 Cкачать и запустить устаногвочный скрипт отсюда: https://github.com/odyazhka/bg
 
 В visudo прописать /usr/local/bin/brightness для смены яркости без пароля
 
-### 5. Для смены рскладки должен существовать файл 00-keyboard.conf в /etc/X11/xorg.conf.d
+#### 5. Для смены рскладки должен существовать файл 00-keyboard.conf в /etc/X11/xorg.conf.d
 
 Переместите его куда если ещё нет и сделайте исполняемым
 
 ``` sudo chmod 777 /etc/X11/xorg.conf.d/00-keyboard.conf ```
 
-### 6. Для безпарольного выключения, перезагрузки, гибернации и прочих действий редактируйте visudo:
+#### 6. Для безпарольного выключения, перезагрузки, гибернации и прочих действий редактируйте visudo:
 
 ``` sudo EDITOR=nano visudo ```
 
@@ -57,13 +59,13 @@ Cкачать и запустить устаногвочный скрипт от
 
 Сохраняем и выходим: контрл+o, контрл+x
 
-### 7. Поставить обои:
+#### 7. Поставить обои:
 
 ```
 feh --bg-scale ~/oboi.png
 ```
 
-### 8. Панель интегрирована с odjk-wifi и odjk-blue
+#### 8. Панель интегрирована с odjk-wifi и odjk-blue
 
 Скачать их можно тут:
 
