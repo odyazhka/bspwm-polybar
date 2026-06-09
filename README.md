@@ -1,4 +1,5 @@
-# дотфайлы со скриптами для sbpwm, polybar и ro
+### дотфайлы со скриптами для sbpwm, polybar и rofi
+
 ### Скриншоты
 
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/559257f9-747f-44c4-9cbf-483a8b783449" />
