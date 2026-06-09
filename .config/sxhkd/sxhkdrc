@@ -33,6 +33,7 @@ super + Escape
 super + x
 	~/.config/sxhkd/x.sh
 	
+#СВЕРНУТЬ/РАЗВЕРНУТЬ ВСЕ ОКНА
 super + d
 	~/.config/sxhkd/d.sh
 	
@@ -43,13 +44,14 @@ super + alt + {q,r}
 # close
 super + c
 	bspc node -{c}
+	
+alt + F4
+	bspc node -{k}
 
 # close and kill
 super + k
 	bspc node -{k}
 
-alt + F4
-	bspc node -{k}
 
 #РАЗВЕРНУТЬ БЕЗ РАМОК
 # alternate between the tiled and monocle layout
@@ -75,7 +77,17 @@ super + l
 #контральтделит
 ctrl + alt + Delete
     ~/.config/rofi/rofi-power.sh
+    
+# МЕНЕДЖЕР СЕРВИСОВ
+super + v
+    odjk-sv
+    
+# МЕНЕДЖЕР СЕТЕЙ
+super + n
+    odjk-ip
 
+super + i
+    odjk-ip
 #
 # state/flags
 #
@@ -93,8 +105,8 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
+#super + {_,shift + }{h,j,k,l}
+#	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -121,14 +133,17 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+	
+alt + {1-9,0}
+	bspc {node -d} '^{1-9,10}'
 
 #
 # preselect
 #
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+#super + ctrl + {h,j,k,l}
+#	bspc node -p {west,south,north,east}
 
 # preselect the ratio
 super + ctrl + {1-9}
